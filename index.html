@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كريستيانو رونالدو</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>كريستيانو رونالدو</h1>
+        <div class="info">
+            <div class="card" onclick="loadPopupContent('goals-content.html')">
+                <div class="online-indicator"></div>
+                <h2>عدد الأهداف</h2>
+                <p>899</p>
+                <span>#1</span>
+            </div>
+            <div class="card" onclick="loadPopupContent('assists-content.html')">
+                <div class="online-indicator"></div>
+                <h2>عدد الصناعات</h2>
+                <p>291</p>
+                <span>#6</span>
+            </div>
+            <div class="card" onclick="loadPopupContent('awards-content.html')">
+                <h2>عدد الجوائز</h2>
+                <p>269</p>
+                <span>#1</span>
+            </div>
+            <div class="card" onclick="loadPopupContent('other-content.html')">
+                <h2>معلومات أخرى</h2>
+                <p>معلومات إضافية عن رونالدو يمكن إضافتها هنا.</p>
+                <span>#1</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup structure -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popup-content-area">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

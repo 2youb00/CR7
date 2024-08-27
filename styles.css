@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: center;
+    color: #f5f5f5;
+}
+h2{
+    color: #fff;
+}
+.container {
+    max-width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.cart p{
+    font-weight: bold;
+
+}
+.cart span{
+    font-weight:normal;
+
+}
+.card {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+.card h2{
+    color: #00bcd4;
+
+}
+.card span{
+    color: #ffffff;
+    font-size: x-small;
+}
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #373737;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.popup-content {
+    background-color: #292929;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 8px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.popup-content h2, .popup-content h3 {
+    color: #00bcd4;
+}
+
+.popup-content p {
+    margin-bottom: 15px;
+}
+
+.close {
+    color: #aaa;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#popup-content-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.online-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #00ff00; /* Green color to indicate online */
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
